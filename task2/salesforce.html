@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janhavi Tours and Travels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1b1bcf;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+        }
+        .full-width {
+            width: 100%;
+        }
+        .left-section {
+            background: #800000;
+            color: white;
+            padding: 40px;
+            flex: 1;
+            min-width: 300px;
+        }
+        .right-section {
+            background-color: #f8f8f8;
+            flex: 1;
+            padding: 40px 10px;
+            min-width: 100px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: white;
+            text-align: left;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #800000;
+            text-align: center;
+        }
+        p, li {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+        }
+        button {
+            padding: 10px;
+            background: #800000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 100%;
+            max-width: 400px;
+        }
+        button:hover {
+            background: #660000;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="com.jpg" alt="Company Logo">
+            <h1>Welcome to Janhavi Tours and Travels</h1>
+            <ul>
+                <li>Explore the world with us</li>
+                <li>Tailor-made travel packages</li>
+                <li>Personalized customer service</li>
+                <li>Book your dream vacation today</li>
+                <li>Exclusive deals for loyal customers</li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <img src="sl.jpg" alt="Sign up image" class="center">
+            <h2>Sign up for Travel Deals</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Your email address" required>
+                <select required>
+                    <option value="">Select your role</option>
+                    <option value="traveler">Traveler</option>
+                    <option value="agent">Agent</option>
+                    <option value="manager">Manager</option>
+                </select>
+                <input type="text" placeholder="Company Name" required>
+                <input type="text" placeholder="Country/Region" required>
+                <input type="text" placeholder="Postal Code" required>
+                <input type="text" placeholder="Username" required>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

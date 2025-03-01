@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fdf6e3;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 650px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #ffbf00;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 25px;
+            background: #ffcc00;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #ffb300;
+        }
+        @media (max-width: 500px) {
+            .input-container {
+                flex-direction: column;
+            }
+            input, button {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function saveDetails() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+            if (name === "" || email === "" || password === "") {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid Gmail address.");
+                return;
+            }
+
+            localStorage.setItem("userName", name);
+            localStorage.setItem("userEmail", email);
+            localStorage.setItem("userPassword", password);
+            alert("Account created successfully with email: " + email);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Register Your Flower Business with Us!</h2>
+        <p>Sign up to list your flower business and grow your presence online with our platform.</p>
+        <div class="input-container">
+            <input type="text" id="name" placeholder="Enter your Name">
+            <input type="email" id="email" placeholder="Enter your Gmail">
+            <input type="password" id="password" placeholder="Enter your Password">
+        </div>
+        <button onclick="saveDetails()">Create Account</button>
+    </div>
+</body>
+</html>

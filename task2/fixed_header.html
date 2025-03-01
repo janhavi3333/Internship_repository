@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowers Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace; /* Changed font */
+      background-color: beige; /* Set background to beige */
+      line-height: 1.6;
+      text-align: center; /* Center aligned the text */
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff8dc; /* Slightly off-white for header */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center; /* Center align nav links */
+      flex-grow: 1;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4b0082; /* Change color to purple */
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      border: 2px solid #4b0082; /* Purple border */
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #fff8dc; /* Beige background for button */
+      color: #4b0082; /* Purple text */
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 100px 40px;
+      margin-top: 100px;
+    }
+
+    .section-dark {
+      background-color: #d8bfd8; /* Light lavender for section background */
+      color: #4b0082;
+      padding: 100px 40px;
+    }
+
+    .section-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap; /* Allow content to wrap */
+    }
+
+    .section-text {
+      max-width: 600px;
+    }
+
+    .section-text h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 50%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #4b0082;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .section-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flowers Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#collections">Our Flowers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#collections" class="btn">Explore Flowers</a>
+  </header>
+
+  <section id="home" class="section-dark">
+    <div class="section-content">
+      <div class="section-text">
+        <h2>Explore the Beauty of Flowers</h2>
+        <p>Our curated collection of fresh blooms brings nature's beauty right to your doorstep. Whether you're searching for roses, lilies, or exotic flowers, we have something for every occasion.</p>
+        <a href="#collections" class="btn">View Our Flower Collection</a>
+      </div>
+      <img src="flowers1.jpg" alt="Flowers">
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-content">
+      <img src="flowers2.jpg" alt="About Us">
+      <div class="section-text">
+        <h2>About Our Flower Collections</h2>
+        <p>We specialize in a wide range of flowers, from vibrant roses to calming orchids. Our team handpicks each bloom to ensure freshness and quality, offering you only the finest nature has to offer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="collections" class="section-dark">
+    <div class="section-content">
+      <div class="section-text">
+        <h2>Our Flower Selections</h2>
+        <p>Browse through our wide variety of flowers and floral arrangements. Whether you're looking for something classic or a modern arrangement, we have the perfect flowers for you.</p>
+      </div>
+      <img src="flowers3.jpg" alt="Flower Collections">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div>
+      <h3>Contact Information</h3>
+      <p>Email: support@flowersgallery.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+      <p>Address: 123 Blossom Avenue, Floral City, 56789</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Flowers Gallery, 2025 - All Rights Reserved</p>
+  </footer>
+</body>
+</html>

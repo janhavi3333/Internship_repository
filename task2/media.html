@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e5f6e5; /* Pastel green background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: left; /* Left-aligned text */
+            padding: 25px;
+            background-color: #a8d5ba; /* Pastel green background */
+            color: #333; /* Dark gray text color */
+            border-radius: 12px;
+            width: 90%; /* Default width */
+            max-width: 400px; /* Target width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 1.8rem; /* Larger heading */
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Media Query for devices with a width of 360px (Galaxy S8+) */
+        @media (max-width: 360px) {
+            .container {
+                padding: 20px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Default fallback for larger screens */
+        @media (min-width: 361px) {
+            .container {
+                padding: 30px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Design with Media Queries</h1>
+        <p>Resize the browser window to see the text alignment, background color, and font size change dynamically.</p>
+    </div>
+</body>
+</html>
