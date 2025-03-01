@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provinces of Colonial India (1907)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: #ffffff;
+            margin: 0;
+            font-size: 26px;
+            border-bottom: 4px solid #1abc9c;
+        }
+
+        .layout-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
+            flex-wrap: wrap;
+        }
+
+        .data-table-container {
+            flex: 2;
+            min-width: 65%;
+            background-color: #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .map-image-container {
+            flex: 1;
+            min-width: 30%;
+            padding-left: 20px;
+        }
+
+        .map-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #b0bec5;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        td {
+            background-color: #f7f9fb;
+        }
+
+        td a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+
+        td a:hover {
+            color: #1abc9c;
+        }
+
+        .major-provinces-header,
+        .minor-provinces-header {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            color: #34495e;
+        }
+
+        .section-heading {
+            color: #34495e;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .layout-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .data-table-container,
+            .map-image-container {
+                min-width: 90%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Provinces of Colonial India (1907)</h2>
+    <div class="layout-container">
+        <div class="data-table-container">
+            <div class="section-heading">Major Administrative Regions</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Region</th>
+                        <th>Size (km²)</th>
+                        <th>Population (1901)</th>
+                        <th>Top Administrator</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="major-provinces-header">
+                        <td colspan="4">Key Provinces</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Assam Region</a></td>
+                        <td>130,000</td>
+                        <td>6 million</td>
+                        <td><a href="#">Chief Commissioner</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Bengal Province</a></td>
+                        <td>390,000</td>
+                        <td>75 million</td>
+                        <td><a href="#">Lieutenant-Governor</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Bombay Region</a></td>
+                        <td>320,000</td>
+                        <td>19 million</td>
+                        <td><a href="#">Governor-in-Council</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Central India and Berar</a></td>
+                        <td>270,000</td>
+                        <td>13 million</td>
+                        <td><a href="#">Chief Commissioner</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Madras Region</a></td>
+                        <td>370,000</td>
+                        <td>38 million</td>
+                        <td><a href="#">Governor-in-Council</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Punjab Province</a></td>
+                        <td>250,000</td>
+                        <td>20 million</td>
+                        <td><a href="#">Lieutenant-Governor</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">United Provinces</a></td>
+                        <td>280,000</td>
+                        <td>48 million</td>
+                        <td><a href="#">Lieutenant-Governor</a></td>
+                    </tr>
+                    <tr class="minor-provinces-header">
+                        <td colspan="4">Lesser Provinces</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Ajmer-Merwara</a></td>
+                        <td>7,000</td>
+                        <td>477,000</td>
+                        <td><a href="#">Ex Officio Chief Commissioner</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Andaman & Nicobar Islands</a></td>
+                        <td>78,000</td>
+                        <td>25,000</td>
+                        <td><a href="#">Chief Commissioner</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Coorg Region</a></td>
+                        <td>4,100</td>
+                        <td>181,000</td>
+                        <td><a href="#">Ex Officio Chief Commissioner</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="map-image-container">
+            <img src="map_image.jpg" alt="Colonial India Map (1907)">
+        </div>
+    </div>
+</body>
+
+</html>
+

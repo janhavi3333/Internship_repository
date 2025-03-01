@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Schedule</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: 'Arial', sans-serif;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #ececec;
+      font-weight: bold;
+    }
+    .office-time {
+      background-color: #f8d7da;
+    }
+    .mathematics {
+      background-color: #d4edda;
+    }
+    .cs-class {
+      background-color: #f1c2d4;
+    }
+    .meeting-time {
+      background-color: #e2e2e2;
+    }
+    .office-hours-note {
+      background-color: #f8d7da;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align: center; font-family: 'Arial', sans-serif;">Weekly Availability</h2>
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td>1:00 PM</td>
+      <td class="office-time" rowspan="2">Office Hours</td>
+      <td></td>
+      <td class="office-time" rowspan="2">Office Hours</td>
+      <td class="office-hours-note" rowspan="4">Office by Appointment</td>
+      <td class="office-time" rowspan="2">Office Hours</td>
+    </tr>
+    <tr>
+      <td>1:30 PM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2:00 PM</td>
+      <td class="mathematics" rowspan="2">MAT 108 - Algebra</td>
+      <td class="meeting-time" rowspan="2">Department Meeting</td>
+      <td class="mathematics" rowspan="2">MAT 108 - Algebra</td>
+      <td class="mathematics" rowspan="2">MAT 108 - Algebra</td>
+    </tr>
+    <tr>
+      <td>2:30 PM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3:00 PM</td>
+      <td class="cs-class" rowspan="2">CSC 205 - Data Structures</td>
+      <td class="meeting-time" rowspan="2">Executive Committee</td>
+      <td class="cs-class" rowspan="2">CSC 205 - Data Structures</td>
+      <td class="cs-class" rowspan="2">CSC 205 - Data Structures</td>
+    </tr>
+    <tr>
+      <td>3:30 PM</td>
+    </tr>
+  </table>
+</body>
+</html>
